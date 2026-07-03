@@ -100,19 +100,6 @@ def calcular_imposto(salario_mensal: float):
 
 salario_mensal = float(input("Informe seu salário bruto mensal (R$): "))
 
-while True:
-  pgbl = input("Realiza aplicacoes PGBL? [Yy/Nn]: ")
-
-  if pgbl == 'y' or pgbl == 'Y':
-    pgbl = True
-    break
-  elif pgbl == 'n' or pgbl == 'N':
-    pgbl = False
-    break
-  else: 
-    print('Input invalido. Tente novamente.')
-
-
 resultado = calcular_imposto(salario_mensal)
 
 print(f"Salário bruto mensal: R$ {resultado['salario_mensal']:.2f}")
